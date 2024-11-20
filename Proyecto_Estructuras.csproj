@@ -35,9 +35,14 @@
   <PropertyGroup>
     <StartupObject>Proyecto_Estructuras.Program</StartupObject>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Media\Icono_principal.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,10 +54,57 @@
     <Compile Include="Controlador\Program.cs" />
     <Compile Include="Modelo\Interface.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\Menu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Controlador\App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\Base.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\Cabeza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\Cuerpo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\Primer_Brazo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\Primera_Pierna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\Segunda_pierna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\Segundo_Brazo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\Icono_principal.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
