@@ -8,5 +8,6 @@ namespace Proyecto_Estructuras.Vista
 {
     internal class Menu
     {
+        int numero = 5;
     }
 }
