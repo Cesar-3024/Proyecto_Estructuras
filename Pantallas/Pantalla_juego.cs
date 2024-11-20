@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Proyecto_Estructuras.Vista
+namespace Proyecto_Estructuras.Pantallas
 {
-    public partial class Ventana_principal : Form
+    public partial class Pantalla_juego : Form
     {
-        public Ventana_principal()
+        public Pantalla_juego()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Pantalla_juego_Load(object sender, EventArgs e)
         {
 
         }
