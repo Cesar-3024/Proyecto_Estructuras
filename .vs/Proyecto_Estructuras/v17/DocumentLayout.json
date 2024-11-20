@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\lmorac\\source\\repos\\Proyecto_Estructuras\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lmorac\\source\\repos\\Proyecto_Estructuras\\Vista\\Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Vista\\Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28AE9A70-F9BC-4A3A-ACA1-FDD32F6B70A2}|Proyecto_Estructuras.csproj|c:\\users\\lmorac\\source\\repos\\proyecto_estructuras\\vista\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28AE9A70-F9BC-4A3A-ACA1-FDD32F6B70A2}|Proyecto_Estructuras.csproj|solutionrelative:vista\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lmorac\\source\\repos\\Proyecto_Estructuras\\Modelo\\Interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Modelo\\Interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28AE9A70-F9BC-4A3A-ACA1-FDD32F6B70A2}|Proyecto_Estructuras.csproj|C:\\Users\\lmorac\\source\\repos\\Proyecto_Estructuras\\Modelo\\Interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28AE9A70-F9BC-4A3A-ACA1-FDD32F6B70A2}|Proyecto_Estructuras.csproj|solutionrelative:Modelo\\Interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lmorac\\source\\repos\\Proyecto_Estructuras\\Controlador\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controlador\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28AE9A70-F9BC-4A3A-ACA1-FDD32F6B70A2}|Proyecto_Estructuras.csproj|C:\\Users\\lmorac\\source\\repos\\Proyecto_Estructuras\\Controlador\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28AE9A70-F9BC-4A3A-ACA1-FDD32F6B70A2}|Proyecto_Estructuras.csproj|solutionrelative:Controlador\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -60,9 +60,10 @@
               "RelativeDocumentMoniker": "Vista\\Menu.cs",
               "ToolTip": "C:\\Users\\lmorac\\source\\repos\\Proyecto_Estructuras\\Vista\\Menu.cs",
               "RelativeToolTip": "Vista\\Menu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T06:22:10.352Z"
+              "WhenOpened": "2024-11-15T06:22:10.352Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -74,7 +75,8 @@
               "RelativeToolTip": "Modelo\\Interface.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T06:21:58.792Z"
+              "WhenOpened": "2024-11-15T06:21:58.792Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -86,7 +88,8 @@
               "RelativeToolTip": "Controlador\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T06:20:40.952Z"
+              "WhenOpened": "2024-11-15T06:20:40.952Z",
+              "EditorCaption": ""
             }
           ]
         }
