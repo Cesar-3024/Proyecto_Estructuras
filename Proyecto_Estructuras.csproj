@@ -113,5 +113,11 @@
   <ItemGroup>
     <None Include="Media\Icono_principal.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\esqueleto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\Vida.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

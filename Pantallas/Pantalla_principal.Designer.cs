@@ -119,7 +119,7 @@
             this.Check_dificil.Name = "Check_dificil";
             this.Check_dificil.Size = new System.Drawing.Size(65, 27);
             this.Check_dificil.TabIndex = 5;
-            this.Check_dificil.Text = "Dificil";
+            this.Check_dificil.Text = "Difícil";
             this.Check_dificil.UseVisualStyleBackColor = false;
             // 
             // Ventana_principal

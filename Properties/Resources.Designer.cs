@@ -101,6 +101,16 @@ namespace Proyecto_Estructuras.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap esqueleto {
+            get {
+                object obj = ResourceManager.GetObject("esqueleto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Icon similar a (Icono).
         /// </summary>
         internal static System.Drawing.Icon Icono_principal {
@@ -146,6 +156,16 @@ namespace Proyecto_Estructuras.Properties {
         internal static System.Drawing.Bitmap Segundo_Brazo {
             get {
                 object obj = ResourceManager.GetObject("Segundo_Brazo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Vida {
+            get {
+                object obj = ResourceManager.GetObject("Vida", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
