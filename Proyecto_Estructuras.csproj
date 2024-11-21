@@ -51,11 +51,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Pantallas\Pantalla_registros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Pantallas\Pantalla_registros.Designer.cs">
+      <DependentUpon>Pantalla_registros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantalla_registros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantalla_registros.Designer.cs">
+      <DependentUpon>Pantalla_registros.cs</DependentUpon>
     </Compile>
     <Compile Include="Pantallas\Pantalla_juego.cs">
       <SubType>Form</SubType>
@@ -81,8 +87,11 @@
     <None Include="Programa\App.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Pantallas\Pantalla_registros.resx">
+      <DependentUpon>Pantalla_registros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantalla_registros.resx">
+      <DependentUpon>Pantalla_registros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Pantalla_juego.resx">
       <DependentUpon>Pantalla_juego.cs</DependentUpon>

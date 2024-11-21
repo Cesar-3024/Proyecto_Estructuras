@@ -24,7 +24,16 @@ namespace Proyecto_Estructuras.Vista
 
         private void Boton_empezar_Click(object sender, EventArgs e)
         {
-            errorProvider1.SetError(Boton_empezar, "Debe seleccionar una dificultad");
+            if (Check_facil.CheckState == CheckState.Checked
+                || Check_medio.CheckState == CheckState.Checked
+                || Check_dificil.CheckState == CheckState.Checked)
+            {
+                errorProvider1.SetError(Boton_empezar, "");
+            }
+            else
+            {
+                errorProvider1.SetError(Boton_empezar, "Debe seleccionar una dificultad");
+            }
         }
 
         private void Control_dificultad() 

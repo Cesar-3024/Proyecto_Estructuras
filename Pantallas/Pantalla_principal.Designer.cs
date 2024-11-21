@@ -37,6 +37,7 @@
             this.Check_medio = new System.Windows.Forms.CheckBox();
             this.Check_dificil = new System.Windows.Forms.CheckBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.Nombre = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,7 +66,7 @@
             this.Boton_records.Name = "Boton_records";
             this.Boton_records.Size = new System.Drawing.Size(96, 39);
             this.Boton_records.TabIndex = 1;
-            this.Boton_records.Text = "Records";
+            this.Boton_records.Text = "Registros";
             this.Boton_records.UseVisualStyleBackColor = false;
             // 
             // Titulo_principal
@@ -131,6 +132,18 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // Nombre
+            // 
+            this.Nombre.BackColor = System.Drawing.Color.White;
+            this.Nombre.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Nombre.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre.Location = new System.Drawing.Point(161, 76);
+            this.Nombre.Name = "Nombre";
+            this.Nombre.Size = new System.Drawing.Size(323, 42);
+            this.Nombre.TabIndex = 6;
+            this.Nombre.Text = "Su nombre";
+            this.Nombre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Ventana_principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -138,6 +151,7 @@
             this.BackgroundImage = global::Proyecto_Estructuras.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(580, 357);
+            this.Controls.Add(this.Nombre);
             this.Controls.Add(this.Check_dificil);
             this.Controls.Add(this.Check_medio);
             this.Controls.Add(this.Check_facil);
@@ -166,5 +180,6 @@
         private System.Windows.Forms.CheckBox Check_medio;
         private System.Windows.Forms.CheckBox Check_dificil;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Label Nombre;
     }
 }
