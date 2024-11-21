@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ventana_principal));
             this.Boton_empezar = new System.Windows.Forms.Button();
             this.Boton_records = new System.Windows.Forms.Button();
@@ -35,6 +36,8 @@
             this.Check_facil = new System.Windows.Forms.CheckBox();
             this.Check_medio = new System.Windows.Forms.CheckBox();
             this.Check_dificil = new System.Windows.Forms.CheckBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // Boton_empezar
@@ -42,9 +45,10 @@
             this.Boton_empezar.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.Boton_empezar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Boton_empezar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Boton_empezar.Enabled = false;
             this.Boton_empezar.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Boton_empezar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.Boton_empezar.Location = new System.Drawing.Point(323, 174);
+            this.Boton_empezar.Location = new System.Drawing.Point(246, 143);
             this.Boton_empezar.Name = "Boton_empezar";
             this.Boton_empezar.Size = new System.Drawing.Size(159, 61);
             this.Boton_empezar.TabIndex = 0;
@@ -57,7 +61,7 @@
             this.Boton_records.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.Boton_records.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Boton_records.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Boton_records.Location = new System.Drawing.Point(356, 311);
+            this.Boton_records.Location = new System.Drawing.Point(279, 249);
             this.Boton_records.Name = "Boton_records";
             this.Boton_records.Size = new System.Drawing.Size(96, 39);
             this.Boton_records.TabIndex = 1;
@@ -71,7 +75,7 @@
             this.Titulo_principal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Titulo_principal.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Titulo_principal.Font = new System.Drawing.Font("Showcard Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Titulo_principal.Location = new System.Drawing.Point(140, 36);
+            this.Titulo_principal.Location = new System.Drawing.Point(44, 22);
             this.Titulo_principal.Name = "Titulo_principal";
             this.Titulo_principal.Size = new System.Drawing.Size(492, 35);
             this.Titulo_principal.TabIndex = 2;
@@ -83,16 +87,15 @@
             this.Check_facil.Appearance = System.Windows.Forms.Appearance.Button;
             this.Check_facil.AutoSize = true;
             this.Check_facil.BackColor = System.Drawing.Color.Transparent;
-            this.Check_facil.Checked = true;
-            this.Check_facil.CheckState = System.Windows.Forms.CheckState.Checked;
             this.Check_facil.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Check_facil.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Check_facil.Location = new System.Drawing.Point(75, 170);
+            this.Check_facil.Location = new System.Drawing.Point(44, 110);
             this.Check_facil.Name = "Check_facil";
             this.Check_facil.Size = new System.Drawing.Size(53, 27);
             this.Check_facil.TabIndex = 3;
             this.Check_facil.Text = "Fácil";
             this.Check_facil.UseVisualStyleBackColor = false;
+            this.Check_facil.CheckedChanged += new System.EventHandler(this.Check_facil_CheckedChanged);
             // 
             // Check_medio
             // 
@@ -101,12 +104,13 @@
             this.Check_medio.BackColor = System.Drawing.Color.Transparent;
             this.Check_medio.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Check_medio.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Check_medio.Location = new System.Drawing.Point(75, 208);
+            this.Check_medio.Location = new System.Drawing.Point(44, 143);
             this.Check_medio.Name = "Check_medio";
             this.Check_medio.Size = new System.Drawing.Size(61, 27);
             this.Check_medio.TabIndex = 4;
             this.Check_medio.Text = "Medio";
             this.Check_medio.UseVisualStyleBackColor = false;
+            this.Check_medio.CheckedChanged += new System.EventHandler(this.Check_medio_CheckedChanged);
             // 
             // Check_dificil
             // 
@@ -115,12 +119,17 @@
             this.Check_dificil.BackColor = System.Drawing.Color.Transparent;
             this.Check_dificil.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Check_dificil.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Check_dificil.Location = new System.Drawing.Point(75, 245);
+            this.Check_dificil.Location = new System.Drawing.Point(44, 176);
             this.Check_dificil.Name = "Check_dificil";
             this.Check_dificil.Size = new System.Drawing.Size(65, 27);
             this.Check_dificil.TabIndex = 5;
             this.Check_dificil.Text = "Difícil";
             this.Check_dificil.UseVisualStyleBackColor = false;
+            this.Check_dificil.CheckedChanged += new System.EventHandler(this.Check_dificil_CheckedChanged);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // Ventana_principal
             // 
@@ -128,7 +137,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Proyecto_Estructuras.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(780, 457);
+            this.ClientSize = new System.Drawing.Size(580, 357);
             this.Controls.Add(this.Check_dificil);
             this.Controls.Add(this.Check_medio);
             this.Controls.Add(this.Check_facil);
@@ -142,6 +151,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Juego del ahorcado";
             this.Load += new System.EventHandler(this.Pantalla_principal_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,5 +165,6 @@
         private System.Windows.Forms.CheckBox Check_facil;
         private System.Windows.Forms.CheckBox Check_medio;
         private System.Windows.Forms.CheckBox Check_dificil;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
