@@ -21,5 +21,10 @@ namespace Proyecto_Estructuras
         {
 
         }
+
+        private void Etiqueta_dificiles_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

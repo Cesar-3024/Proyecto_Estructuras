@@ -33,23 +33,23 @@
             this.Boton_empezar = new System.Windows.Forms.Button();
             this.Boton_records = new System.Windows.Forms.Button();
             this.Titulo_principal = new System.Windows.Forms.Label();
-            this.Check_facil = new System.Windows.Forms.CheckBox();
-            this.Check_medio = new System.Windows.Forms.CheckBox();
-            this.Check_dificil = new System.Windows.Forms.CheckBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.Nombre = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // Boton_empezar
             // 
-            this.Boton_empezar.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.Boton_empezar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Boton_empezar.BackColor = System.Drawing.Color.Snow;
+            this.Boton_empezar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Boton_empezar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Boton_empezar.Enabled = false;
+            this.Boton_empezar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Boton_empezar.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Boton_empezar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.Boton_empezar.Location = new System.Drawing.Point(246, 143);
+            this.Boton_empezar.ForeColor = System.Drawing.Color.Black;
+            this.Boton_empezar.Location = new System.Drawing.Point(244, 164);
             this.Boton_empezar.Name = "Boton_empezar";
             this.Boton_empezar.Size = new System.Drawing.Size(159, 61);
             this.Boton_empezar.TabIndex = 0;
@@ -59,8 +59,10 @@
             // 
             // Boton_records
             // 
-            this.Boton_records.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.Boton_records.BackColor = System.Drawing.Color.Snow;
+            this.Boton_records.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Boton_records.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Boton_records.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Boton_records.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Boton_records.Location = new System.Drawing.Point(279, 249);
             this.Boton_records.Name = "Boton_records";
@@ -72,61 +74,16 @@
             // Titulo_principal
             // 
             this.Titulo_principal.AutoSize = true;
-            this.Titulo_principal.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.Titulo_principal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Titulo_principal.BackColor = System.Drawing.Color.Transparent;
             this.Titulo_principal.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Titulo_principal.Font = new System.Drawing.Font("Showcard Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Titulo_principal.ForeColor = System.Drawing.Color.Snow;
             this.Titulo_principal.Location = new System.Drawing.Point(44, 22);
             this.Titulo_principal.Name = "Titulo_principal";
-            this.Titulo_principal.Size = new System.Drawing.Size(492, 35);
+            this.Titulo_principal.Size = new System.Drawing.Size(490, 33);
             this.Titulo_principal.TabIndex = 2;
             this.Titulo_principal.Text = "Juego del Ahorcado del Grupo #4";
             this.Titulo_principal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Check_facil
-            // 
-            this.Check_facil.Appearance = System.Windows.Forms.Appearance.Button;
-            this.Check_facil.AutoSize = true;
-            this.Check_facil.BackColor = System.Drawing.Color.Transparent;
-            this.Check_facil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Check_facil.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Check_facil.Location = new System.Drawing.Point(44, 110);
-            this.Check_facil.Name = "Check_facil";
-            this.Check_facil.Size = new System.Drawing.Size(53, 27);
-            this.Check_facil.TabIndex = 3;
-            this.Check_facil.Text = "Fácil";
-            this.Check_facil.UseVisualStyleBackColor = false;
-            this.Check_facil.CheckedChanged += new System.EventHandler(this.Check_facil_CheckedChanged);
-            // 
-            // Check_medio
-            // 
-            this.Check_medio.Appearance = System.Windows.Forms.Appearance.Button;
-            this.Check_medio.AutoSize = true;
-            this.Check_medio.BackColor = System.Drawing.Color.Transparent;
-            this.Check_medio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Check_medio.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Check_medio.Location = new System.Drawing.Point(44, 143);
-            this.Check_medio.Name = "Check_medio";
-            this.Check_medio.Size = new System.Drawing.Size(61, 27);
-            this.Check_medio.TabIndex = 4;
-            this.Check_medio.Text = "Medio";
-            this.Check_medio.UseVisualStyleBackColor = false;
-            this.Check_medio.CheckedChanged += new System.EventHandler(this.Check_medio_CheckedChanged);
-            // 
-            // Check_dificil
-            // 
-            this.Check_dificil.Appearance = System.Windows.Forms.Appearance.Button;
-            this.Check_dificil.AutoSize = true;
-            this.Check_dificil.BackColor = System.Drawing.Color.Transparent;
-            this.Check_dificil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Check_dificil.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Check_dificil.Location = new System.Drawing.Point(44, 176);
-            this.Check_dificil.Name = "Check_dificil";
-            this.Check_dificil.Size = new System.Drawing.Size(65, 27);
-            this.Check_dificil.TabIndex = 5;
-            this.Check_dificil.Text = "Difícil";
-            this.Check_dificil.UseVisualStyleBackColor = false;
-            this.Check_dificil.CheckedChanged += new System.EventHandler(this.Check_dificil_CheckedChanged);
             // 
             // errorProvider1
             // 
@@ -134,15 +91,41 @@
             // 
             // Nombre
             // 
-            this.Nombre.BackColor = System.Drawing.Color.White;
+            this.Nombre.BackColor = System.Drawing.Color.Snow;
             this.Nombre.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Nombre.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Nombre.Location = new System.Drawing.Point(161, 76);
+            this.Nombre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Nombre.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre.ForeColor = System.Drawing.Color.Black;
+            this.Nombre.Location = new System.Drawing.Point(239, 94);
             this.Nombre.Name = "Nombre";
             this.Nombre.Size = new System.Drawing.Size(323, 42);
             this.Nombre.TabIndex = 6;
             this.Nombre.Text = "Su nombre";
             this.Nombre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(50, 151);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(111, 21);
+            this.comboBox1.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Snow;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label1.Enabled = false;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(51, 101);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 36);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Dificultad";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Ventana_principal
             // 
@@ -151,10 +134,9 @@
             this.BackgroundImage = global::Proyecto_Estructuras.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(580, 357);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.Nombre);
-            this.Controls.Add(this.Check_dificil);
-            this.Controls.Add(this.Check_medio);
-            this.Controls.Add(this.Check_facil);
             this.Controls.Add(this.Titulo_principal);
             this.Controls.Add(this.Boton_records);
             this.Controls.Add(this.Boton_empezar);
@@ -176,10 +158,9 @@
         private System.Windows.Forms.Button Boton_empezar;
         private System.Windows.Forms.Button Boton_records;
         private System.Windows.Forms.Label Titulo_principal;
-        private System.Windows.Forms.CheckBox Check_facil;
-        private System.Windows.Forms.CheckBox Check_medio;
-        private System.Windows.Forms.CheckBox Check_dificil;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Label Nombre;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
