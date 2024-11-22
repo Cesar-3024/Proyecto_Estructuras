@@ -12,7 +12,7 @@ namespace Proyecto_Estructuras.Pantallas
 {
     public partial class Pantalla_juego : Form
     {
-        public Pantalla_juego()
+        public Pantalla_juego(string nombre)
         {
             InitializeComponent();
         }

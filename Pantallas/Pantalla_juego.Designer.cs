@@ -74,8 +74,9 @@
             // 
             // Boton_confirmar
             // 
-            this.Boton_confirmar.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.Boton_confirmar.BackColor = System.Drawing.Color.Snow;
             this.Boton_confirmar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Boton_confirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Boton_confirmar.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Boton_confirmar.Location = new System.Drawing.Point(367, 321);
             this.Boton_confirmar.Name = "Boton_confirmar";
@@ -299,8 +300,9 @@
             // 
             // Boton_menu
             // 
-            this.Boton_menu.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.Boton_menu.BackColor = System.Drawing.Color.Snow;
             this.Boton_menu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Boton_menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Boton_menu.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Boton_menu.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Boton_menu.Location = new System.Drawing.Point(660, 395);
