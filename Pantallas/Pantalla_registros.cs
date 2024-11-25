@@ -21,5 +21,10 @@ namespace Proyecto_Estructuras
         {
 
         }
+
+        private void Titulo_principal_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
