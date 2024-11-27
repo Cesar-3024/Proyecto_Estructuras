@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Proyecto_Estructuras
@@ -25,6 +18,11 @@ namespace Proyecto_Estructuras
         private void Titulo_principal_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Boton_menú_registros_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

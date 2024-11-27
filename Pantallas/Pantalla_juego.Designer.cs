@@ -51,6 +51,10 @@
             this.Boton_menu = new System.Windows.Forms.Button();
             this.Palabras_utilizadas = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.Temporizador_juego = new System.Windows.Forms.Timer(this.components);
+            this.Temporizador_muestra = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Vida_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Vida_2)).BeginInit();
@@ -63,12 +67,12 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(28, 12);
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::Proyecto_Estructuras.Properties.Resources.Base1;
+            this.pictureBox1.Location = new System.Drawing.Point(24, 23);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(214, 211);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -78,7 +82,7 @@
             this.Boton_confirmar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Boton_confirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Boton_confirmar.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Boton_confirmar.Location = new System.Drawing.Point(367, 321);
+            this.Boton_confirmar.Location = new System.Drawing.Point(443, 312);
             this.Boton_confirmar.Name = "Boton_confirmar";
             this.Boton_confirmar.Size = new System.Drawing.Size(205, 41);
             this.Boton_confirmar.TabIndex = 1;
@@ -91,19 +95,18 @@
             this.Letra_escrita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Letra_escrita.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Letra_escrita.ForeColor = System.Drawing.Color.Black;
-            this.Letra_escrita.Location = new System.Drawing.Point(264, 312);
+            this.Letra_escrita.Location = new System.Drawing.Point(330, 286);
             this.Letra_escrita.Name = "Letra_escrita";
             this.Letra_escrita.Size = new System.Drawing.Size(57, 67);
             this.Letra_escrita.TabIndex = 3;
             this.Letra_escrita.Text = "A";
             this.Letra_escrita.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Letra_escrita.Click += new System.EventHandler(this.label1_Click);
             // 
             // Vida_1
             // 
             this.Vida_1.BackColor = System.Drawing.Color.Transparent;
             this.Vida_1.Image = global::Proyecto_Estructuras.Properties.Resources.esqueleto;
-            this.Vida_1.Location = new System.Drawing.Point(317, 30);
+            this.Vida_1.Location = new System.Drawing.Point(293, 30);
             this.Vida_1.Name = "Vida_1";
             this.Vida_1.Size = new System.Drawing.Size(44, 46);
             this.Vida_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -114,7 +117,7 @@
             // 
             this.Vida_2.BackColor = System.Drawing.Color.Transparent;
             this.Vida_2.Image = global::Proyecto_Estructuras.Properties.Resources.esqueleto;
-            this.Vida_2.Location = new System.Drawing.Point(367, 30);
+            this.Vida_2.Location = new System.Drawing.Point(343, 30);
             this.Vida_2.Name = "Vida_2";
             this.Vida_2.Size = new System.Drawing.Size(44, 46);
             this.Vida_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -125,7 +128,7 @@
             // 
             this.Vida_3.BackColor = System.Drawing.Color.Transparent;
             this.Vida_3.Image = global::Proyecto_Estructuras.Properties.Resources.Vida;
-            this.Vida_3.Location = new System.Drawing.Point(417, 30);
+            this.Vida_3.Location = new System.Drawing.Point(393, 30);
             this.Vida_3.Name = "Vida_3";
             this.Vida_3.Size = new System.Drawing.Size(44, 46);
             this.Vida_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -136,7 +139,7 @@
             // 
             this.Vida_4.BackColor = System.Drawing.Color.Transparent;
             this.Vida_4.Image = global::Proyecto_Estructuras.Properties.Resources.Vida;
-            this.Vida_4.Location = new System.Drawing.Point(467, 30);
+            this.Vida_4.Location = new System.Drawing.Point(443, 30);
             this.Vida_4.Name = "Vida_4";
             this.Vida_4.Size = new System.Drawing.Size(44, 46);
             this.Vida_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -147,19 +150,18 @@
             // 
             this.Vida_5.BackColor = System.Drawing.Color.Transparent;
             this.Vida_5.Image = global::Proyecto_Estructuras.Properties.Resources.Vida;
-            this.Vida_5.Location = new System.Drawing.Point(517, 30);
+            this.Vida_5.Location = new System.Drawing.Point(493, 30);
             this.Vida_5.Name = "Vida_5";
             this.Vida_5.Size = new System.Drawing.Size(44, 46);
             this.Vida_5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Vida_5.TabIndex = 9;
             this.Vida_5.TabStop = false;
-            this.Vida_5.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // Vida_6
             // 
             this.Vida_6.BackColor = System.Drawing.Color.Transparent;
             this.Vida_6.Image = global::Proyecto_Estructuras.Properties.Resources.Vida;
-            this.Vida_6.Location = new System.Drawing.Point(567, 30);
+            this.Vida_6.Location = new System.Drawing.Point(543, 30);
             this.Vida_6.Name = "Vida_6";
             this.Vida_6.Size = new System.Drawing.Size(44, 46);
             this.Vida_6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -261,10 +263,10 @@
             // 
             this.Letras_usadas.BackColor = System.Drawing.Color.White;
             this.Letras_usadas.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Letras_usadas.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Letras_usadas.Font = new System.Drawing.Font("Showcard Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Letras_usadas.ForeColor = System.Drawing.Color.Black;
             this.Letras_usadas.FormattingEnabled = true;
-            this.Letras_usadas.ItemHeight = 14;
+            this.errorProvider1.SetIconAlignment(this.Letras_usadas, System.Windows.Forms.ErrorIconAlignment.TopRight);
             this.Letras_usadas.Items.AddRange(new object[] {
             "Letra 1",
             "Letra 2",
@@ -276,13 +278,11 @@
             "Letra 8",
             "Letra 9",
             "Letra 10",
-            "Letra 11",
-            "Letra 12",
-            "Letra 13"});
-            this.Letras_usadas.Location = new System.Drawing.Point(28, 261);
+            "Letra 11"});
+            this.Letras_usadas.Location = new System.Drawing.Point(122, 286);
             this.Letras_usadas.Name = "Letras_usadas";
             this.Letras_usadas.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.Letras_usadas.Size = new System.Drawing.Size(102, 182);
+            this.Letras_usadas.Size = new System.Drawing.Size(58, 143);
             this.Letras_usadas.TabIndex = 13;
             // 
             // Puntos
@@ -291,7 +291,7 @@
             this.Puntos.Cursor = System.Windows.Forms.Cursors.Default;
             this.Puntos.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Puntos.ForeColor = System.Drawing.Color.White;
-            this.Puntos.Location = new System.Drawing.Point(655, 30);
+            this.Puntos.Location = new System.Drawing.Point(641, 30);
             this.Puntos.Name = "Puntos";
             this.Puntos.Size = new System.Drawing.Size(68, 46);
             this.Puntos.TabIndex = 19;
@@ -305,12 +305,13 @@
             this.Boton_menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Boton_menu.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Boton_menu.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Boton_menu.Location = new System.Drawing.Point(660, 395);
+            this.Boton_menu.Location = new System.Drawing.Point(754, 395);
             this.Boton_menu.Name = "Boton_menu";
             this.Boton_menu.Size = new System.Drawing.Size(108, 50);
             this.Boton_menu.TabIndex = 20;
             this.Boton_menu.Text = "Volver al menú";
             this.Boton_menu.UseVisualStyleBackColor = false;
+            this.Boton_menu.Click += new System.EventHandler(this.Boton_menu_Click);
             // 
             // Palabras_utilizadas
             // 
@@ -318,7 +319,7 @@
             this.Palabras_utilizadas.BackColor = System.Drawing.Color.Transparent;
             this.Palabras_utilizadas.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Palabras_utilizadas.ForeColor = System.Drawing.Color.White;
-            this.Palabras_utilizadas.Location = new System.Drawing.Point(12, 241);
+            this.Palabras_utilizadas.Location = new System.Drawing.Point(89, 266);
             this.Palabras_utilizadas.Name = "Palabras_utilizadas";
             this.Palabras_utilizadas.Size = new System.Drawing.Size(135, 17);
             this.Palabras_utilizadas.TabIndex = 21;
@@ -329,13 +330,59 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.White;
+            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label8.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(842, 156);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(57, 67);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "A";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label9.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(770, 156);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(57, 67);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "A";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Temporizador_juego
+            // 
+            this.Temporizador_juego.Interval = 1000;
+            // 
+            // Temporizador_muestra
+            // 
+            this.Temporizador_muestra.BackColor = System.Drawing.Color.Transparent;
+            this.Temporizador_muestra.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Temporizador_muestra.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Temporizador_muestra.ForeColor = System.Drawing.Color.White;
+            this.Temporizador_muestra.Location = new System.Drawing.Point(759, 30);
+            this.Temporizador_muestra.Name = "Temporizador_muestra";
+            this.Temporizador_muestra.Size = new System.Drawing.Size(103, 46);
+            this.Temporizador_muestra.TabIndex = 24;
+            this.Temporizador_muestra.Text = "0";
+            this.Temporizador_muestra.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Pantalla_juego
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Proyecto_Estructuras.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(780, 457);
+            this.ClientSize = new System.Drawing.Size(910, 457);
+            this.Controls.Add(this.Temporizador_muestra);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.Palabras_utilizadas);
             this.Controls.Add(this.Boton_menu);
             this.Controls.Add(this.Puntos);
@@ -356,7 +403,7 @@
             this.Controls.Add(this.Letra_escrita);
             this.Controls.Add(this.Boton_confirmar);
             this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Pantalla_juego";
@@ -399,5 +446,9 @@
         private System.Windows.Forms.Button Boton_menu;
         private System.Windows.Forms.Label Palabras_utilizadas;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label Temporizador_muestra;
+        private System.Windows.Forms.Timer Temporizador_juego;
     }
 }

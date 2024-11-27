@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Proyecto_Estructuras.Pantallas;
+using Proyecto_Estructuras.Vista;
 
 namespace Proyecto_Estructuras
 {
@@ -10,6 +7,8 @@ namespace Proyecto_Estructuras
     {
         static void Main(string[] args)
         {
+            Ventana_principal Inicio_juego = new Ventana_principal();
+            Inicio_juego.ShowDialog();
         }
     }
 }
