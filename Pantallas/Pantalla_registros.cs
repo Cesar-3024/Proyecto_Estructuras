@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Proyecto_Estructuras
@@ -10,14 +11,8 @@ namespace Proyecto_Estructuras
             InitializeComponent();
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void Pantalla_registros_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void Titulo_principal_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void Boton_menú_registros_Click(object sender, EventArgs e)

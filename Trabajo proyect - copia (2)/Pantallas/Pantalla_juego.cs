@@ -144,7 +144,7 @@ namespace Proyecto_Estructuras.Pantallas
 
             Cantidad_campos();
             Lector_asignar_palabras();
-            ActualizarLabelVidas(); // Actualiza las vidas
+            ActualizarLabelVidas();
             MostrarPista(); // Mostrar pista al inicio del juego
         }
 

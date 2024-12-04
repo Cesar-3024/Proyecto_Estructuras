@@ -36,7 +36,8 @@ namespace Proyecto_Estructuras.Vista
 
         private void Boton_empezar_Click(object sender, EventArgs e)
         {
-            Pantalla_juego Pantalla_Juego_actual = new Pantalla_juego(Selector_dificultad.SelectedIndex, Nombre.Text);
+            Pantalla_registros pantallaRegistros = new Pantalla_registros();
+            Pantalla_juego Pantalla_Juego_actual = new Pantalla_juego(Selector_dificultad.SelectedIndex, Nombre.Text, pantallaRegistros);
             Pantalla_Juego_actual.ShowDialog();
         }
 

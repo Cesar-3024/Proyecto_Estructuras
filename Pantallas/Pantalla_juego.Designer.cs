@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pantalla_juego));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Imagen_ahorcado = new System.Windows.Forms.PictureBox();
             this.Boton_confirmar = new System.Windows.Forms.Button();
             this.Vida_1 = new System.Windows.Forms.PictureBox();
             this.Vida_2 = new System.Windows.Forms.PictureBox();
@@ -55,7 +55,8 @@
             this.Temporizador_juego = new System.Windows.Forms.Timer(this.components);
             this.Temporizador_muestra = new System.Windows.Forms.Label();
             this.Letra_ingresada = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_ahorcado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Vida_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Vida_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Vida_3)).BeginInit();
@@ -65,16 +66,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // Imagen_ahorcado
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Proyecto_Estructuras.Properties.Resources.Base1;
-            this.pictureBox1.Location = new System.Drawing.Point(24, 23);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.Imagen_ahorcado.BackColor = System.Drawing.Color.Transparent;
+            this.Imagen_ahorcado.Image = global::Proyecto_Estructuras.Properties.Resources.Base;
+            this.Imagen_ahorcado.Location = new System.Drawing.Point(24, 23);
+            this.Imagen_ahorcado.Name = "Imagen_ahorcado";
+            this.Imagen_ahorcado.Size = new System.Drawing.Size(200, 200);
+            this.Imagen_ahorcado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Imagen_ahorcado.TabIndex = 0;
+            this.Imagen_ahorcado.TabStop = false;
             // 
             // Boton_confirmar
             // 
@@ -93,7 +94,7 @@
             // Vida_1
             // 
             this.Vida_1.BackColor = System.Drawing.Color.Transparent;
-            this.Vida_1.Image = global::Proyecto_Estructuras.Properties.Resources.esqueleto;
+            this.Vida_1.Image = global::Proyecto_Estructuras.Properties.Resources.Vida;
             this.Vida_1.Location = new System.Drawing.Point(293, 30);
             this.Vida_1.Name = "Vida_1";
             this.Vida_1.Size = new System.Drawing.Size(44, 46);
@@ -104,7 +105,7 @@
             // Vida_2
             // 
             this.Vida_2.BackColor = System.Drawing.Color.Transparent;
-            this.Vida_2.Image = global::Proyecto_Estructuras.Properties.Resources.esqueleto;
+            this.Vida_2.Image = global::Proyecto_Estructuras.Properties.Resources.Vida;
             this.Vida_2.Location = new System.Drawing.Point(343, 30);
             this.Vida_2.Name = "Vida_2";
             this.Vida_2.Size = new System.Drawing.Size(44, 46);
@@ -248,18 +249,6 @@
             this.Letras_usadas.ForeColor = System.Drawing.Color.Black;
             this.Letras_usadas.FormattingEnabled = true;
             this.errorProvider1.SetIconAlignment(this.Letras_usadas, System.Windows.Forms.ErrorIconAlignment.TopRight);
-            this.Letras_usadas.Items.AddRange(new object[] {
-            "Letra 1",
-            "Letra 2",
-            "Letra 3",
-            "Letra 4",
-            "Letra 5",
-            "Letra 6",
-            "Letra 7",
-            "Letra 8",
-            "Letra 9",
-            "Letra 10",
-            "Letra 11"});
             this.Letras_usadas.Location = new System.Drawing.Point(122, 286);
             this.Letras_usadas.Name = "Letras_usadas";
             this.Letras_usadas.SelectionMode = System.Windows.Forms.SelectionMode.None;
@@ -272,7 +261,7 @@
             this.Puntos.Cursor = System.Windows.Forms.Cursors.Default;
             this.Puntos.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Puntos.ForeColor = System.Drawing.Color.White;
-            this.Puntos.Location = new System.Drawing.Point(651, 30);
+            this.Puntos.Location = new System.Drawing.Point(735, 30);
             this.Puntos.Name = "Puntos";
             this.Puntos.Size = new System.Drawing.Size(68, 46);
             this.Puntos.TabIndex = 19;
@@ -366,6 +355,19 @@
             this.Letra_ingresada.TabIndex = 25;
             this.Letra_ingresada.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(624, 38);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(114, 30);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Puntos:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Pantalla_juego
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -373,6 +375,7 @@
             this.BackgroundImage = global::Proyecto_Estructuras.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(910, 457);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Letra_ingresada);
             this.Controls.Add(this.Temporizador_muestra);
             this.Controls.Add(this.Campo_9);
@@ -395,7 +398,7 @@
             this.Controls.Add(this.Vida_2);
             this.Controls.Add(this.Vida_1);
             this.Controls.Add(this.Boton_confirmar);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Imagen_ahorcado);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -403,7 +406,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Juego del ahorcado";
             this.Load += new System.EventHandler(this.Pantalla_juego_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_ahorcado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Vida_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Vida_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Vida_3)).EndInit();
@@ -418,7 +421,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Imagen_ahorcado;
         private System.Windows.Forms.Button Boton_confirmar;
         private System.Windows.Forms.PictureBox Vida_6;
         private System.Windows.Forms.PictureBox Vida_5;
@@ -443,5 +446,6 @@
         private System.Windows.Forms.Label Temporizador_muestra;
         private System.Windows.Forms.Timer Temporizador_juego;
         private System.Windows.Forms.TextBox Letra_ingresada;
+        private System.Windows.Forms.Label label1;
     }
 }

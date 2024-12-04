@@ -65,7 +65,6 @@
             this.Lista_faciles.Name = "Lista_faciles";
             this.Lista_faciles.Size = new System.Drawing.Size(157, 304);
             this.Lista_faciles.TabIndex = 1;
-            this.Lista_faciles.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // Lista_medios
             // 
@@ -108,7 +107,6 @@
             this.Titulo_principal.TabIndex = 4;
             this.Titulo_principal.Text = "Fáciles";
             this.Titulo_principal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Titulo_principal.Click += new System.EventHandler(this.Titulo_principal_Click);
             // 
             // label1
             // 
@@ -157,6 +155,7 @@
             this.Name = "Pantalla_registros";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registros";
+            this.Load += new System.EventHandler(this.Pantalla_registros_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,11 +164,11 @@
         #endregion
 
         private System.Windows.Forms.Button Boton_menú_registros;
-        private System.Windows.Forms.ListBox Lista_faciles;
-        private System.Windows.Forms.ListBox Lista_medios;
-        private System.Windows.Forms.ListBox Lista_dificiles;
         private System.Windows.Forms.Label Titulo_principal;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.ListBox Lista_faciles;
+        public System.Windows.Forms.ListBox Lista_medios;
+        public System.Windows.Forms.ListBox Lista_dificiles;
     }
 }

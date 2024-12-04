@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{28AE9A70-F9BC-4A3A-ACA1-FDD32F6B70A2}</ProjectGuid>
+    <ProjectGuid>{5FF5E15F-B317-4638-B9FE-5B5E8C611FBF}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Proyecto_Estructuras</RootNamespace>
     <AssemblyName>Proyecto_Estructuras</AssemblyName>
@@ -67,12 +67,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pantallas\Jugador.cs" />
-    <Compile Include="Pantallas\Pantalla_registros.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pantallas\Pantalla_registros.Designer.cs">
-      <DependentUpon>Pantalla_registros.cs</DependentUpon>
-    </Compile>
     <Compile Include="Pantallas\Pantalla_juego.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,15 +91,13 @@
     <None Include="Programa\App.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pantallas\Pantalla_registros.resx">
-      <DependentUpon>Pantalla_registros.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Pantalla_juego.resx">
       <DependentUpon>Pantalla_juego.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Pantalla_principal.resx">
       <DependentUpon>Pantalla_principal.cs</DependentUpon>
@@ -128,9 +120,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Media\Primera_Pierna.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Media\Segunda_pierna.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Media\Segundo_Brazo.png" />
@@ -173,6 +162,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Media\Segunda_pierna.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -20,3 +20,14 @@ C:\Users\CPALA_okofwtt\OneDrive\Escritorio\Trabajo proyect - copia (2)\obj\Debug
 C:\Users\CPALA_okofwtt\OneDrive\Escritorio\Trabajo proyect - copia (2)\obj\Debug\Proyecto_Estructuras.csproj.CoreCompileInputs.cache
 C:\Users\CPALA_okofwtt\OneDrive\Escritorio\Trabajo proyect - copia (2)\obj\Debug\Proyecto_Estructuras.exe
 C:\Users\CPALA_okofwtt\OneDrive\Escritorio\Trabajo proyect - copia (2)\obj\Debug\Proyecto_Estructuras.pdb
+C:\Users\lmorac\source\repos\Proyecto_Estructuras\Trabajo proyect - copia (2)\bin\Debug\Proyecto_Estructuras.exe.config
+C:\Users\lmorac\source\repos\Proyecto_Estructuras\Trabajo proyect - copia (2)\bin\Debug\Proyecto_Estructuras.exe
+C:\Users\lmorac\source\repos\Proyecto_Estructuras\Trabajo proyect - copia (2)\bin\Debug\Proyecto_Estructuras.pdb
+C:\Users\lmorac\source\repos\Proyecto_Estructuras\Trabajo proyect - copia (2)\obj\Debug\Proyecto_Estructuras.csproj.AssemblyReference.cache
+C:\Users\lmorac\source\repos\Proyecto_Estructuras\Trabajo proyect - copia (2)\obj\Debug\Proyecto_Estructuras.Pantallas.Pantalla_juego.resources
+C:\Users\lmorac\source\repos\Proyecto_Estructuras\Trabajo proyect - copia (2)\obj\Debug\Proyecto_Estructuras.Properties.Resources.resources
+C:\Users\lmorac\source\repos\Proyecto_Estructuras\Trabajo proyect - copia (2)\obj\Debug\Proyecto_Estructuras.Vista.Ventana_principal.resources
+C:\Users\lmorac\source\repos\Proyecto_Estructuras\Trabajo proyect - copia (2)\obj\Debug\Proyecto_Estructuras.csproj.GenerateResource.cache
+C:\Users\lmorac\source\repos\Proyecto_Estructuras\Trabajo proyect - copia (2)\obj\Debug\Proyecto_Estructuras.csproj.CoreCompileInputs.cache
+C:\Users\lmorac\source\repos\Proyecto_Estructuras\Trabajo proyect - copia (2)\obj\Debug\Proyecto_Estructuras.exe
+C:\Users\lmorac\source\repos\Proyecto_Estructuras\Trabajo proyect - copia (2)\obj\Debug\Proyecto_Estructuras.pdb

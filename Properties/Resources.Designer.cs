@@ -83,16 +83,6 @@ namespace Proyecto_Estructuras.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Base1 {
-            get {
-                object obj = ResourceManager.GetObject("Base1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Cabeza {
             get {
                 object obj = ResourceManager.GetObject("Cabeza", resourceCulture);
@@ -103,29 +93,9 @@ namespace Proyecto_Estructuras.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Cabeza1 {
-            get {
-                object obj = ResourceManager.GetObject("Cabeza1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Cuerpo {
             get {
                 object obj = ResourceManager.GetObject("Cuerpo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Cuerpo1 {
-            get {
-                object obj = ResourceManager.GetObject("Cuerpo1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -217,57 +187,10 @@ namespace Proyecto_Estructuras.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Primer_brazo1 {
-            get {
-                object obj = ResourceManager.GetObject("Primer_brazo1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Primera_pierna {
             get {
                 object obj = ResourceManager.GetObject("Primera_pierna", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Primera_pierna1 {
-            get {
-                object obj = ResourceManager.GetObject("Primera_pierna1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a .
-        /// </summary>
-        internal static string Registros_dificiles {
-            get {
-                return ResourceManager.GetString("Registros_dificiles", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a .
-        /// </summary>
-        internal static string Registros_faciles {
-            get {
-                return ResourceManager.GetString("Registros_faciles", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a .
-        /// </summary>
-        internal static string Registros_medios {
-            get {
-                return ResourceManager.GetString("Registros_medios", resourceCulture);
             }
         }
         
@@ -284,29 +207,9 @@ namespace Proyecto_Estructuras.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Segunda_pierna1 {
-            get {
-                object obj = ResourceManager.GetObject("Segunda_pierna1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Segundo_brazo {
             get {
                 object obj = ResourceManager.GetObject("Segundo_brazo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Segundo_brazo1 {
-            get {
-                object obj = ResourceManager.GetObject("Segundo_brazo1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
